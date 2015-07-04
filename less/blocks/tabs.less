@@ -1,0 +1,30 @@
+.nav-tabs {
+	margin-bottom: 15px;
+
+	> li {
+		margin-right: 11px;
+
+		&:last-child {
+			margin-right: 0;
+		}
+	}
+
+	> li > a {
+	padding: 5px 31px 4px;
+	color: #353535;
+	text-decoration: none;
+	border: 1px solid #dddddd;
+	margin-right: 0;
+	}
+
+	> li.active > a {
+		&,
+		&:hover,
+		&:focus{
+			color: #fff;
+			background-color: @red;
+			border: 1px solid @red;
+		}
+	}
+	
+}

@@ -1,0 +1,86 @@
+.btn {
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	font-size: @font-size - 1;
+	color: #fff;
+	padding: 10px 30px 10px;
+	margin: 10px 20px 12px 0;
+	border-radius: 5px;
+	line-height: @font-size;
+	
+
+
+	&--small{
+		padding: 8px 29px 6px;
+	}
+
+
+
+	&--green {
+		background-color: @green;
+		box-shadow: 0 3px 0 @green--shad;
+
+		&:hover {
+			background-color: @green--h;
+			box-shadow: 0 3px 0 @green--shad-h;
+			transition-duration: 0.25s;
+			transition-property: background-color, box-shadow;
+		}
+
+		&:active {
+			background-color: @green;
+			transform: translateY(3px);
+			transition-duration: 0.1s;
+			transition-property: box-shadow, transform;
+			box-shadow: none;
+		}
+	}
+
+
+
+	&--red {
+		background-color: @red;
+		box-shadow: 0 3px 0 @red--shad;
+
+		&:hover {
+			background-color: @red--h;
+			box-shadow: 0 3px 0 @red--shad-h;
+			transition-duration: 0.25s;
+			transition-property: background-color, box-shadow;
+		}
+
+		&:active {
+			background-color: @red;
+			transform: translateY(3px);
+			transition-duration: 0.1s;
+			transition-property: box-shadow, transform;
+			box-shadow: none;
+		}
+	}
+
+
+	&--gray {
+		background-color: @gray;
+		box-shadow: 0 3px 0 @gray--shad;
+
+		&:hover {
+			background-color: @gray--h;
+			box-shadow: 0 3px 0 @gray--shad-h;
+			transition-duration: 0.25s;
+			transition-property: background-color, box-shadow;
+		}
+
+		&:active {
+			background-color: @gray;
+			transform: translateY(3px);
+			transition-duration: 0.1s;
+			transition-property: box-shadow, transform;
+			box-shadow: none;
+		}
+	}
+
+
+
+}
+

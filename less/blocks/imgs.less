@@ -1,0 +1,131 @@
+.content-pic {
+	border-radius: 5px;
+}
+
+
+.fade-icon {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	line-height: 0;
+	background-color: #000;
+	border-radius: 5px;
+
+
+	// &__hover {
+	// 	position: absolute;
+	// 	height: 272px;
+	// 	width: 272px;
+	// 	top: 0;
+	// 	left: 0;
+	// 	opacity: 0;
+	// 	background-color: #000;
+	// 	border-radius: 5px;
+	// 	background-image: url(../imgs/icon-zoom.png);
+	// 	background-repeat: no-repeat;
+	// 	background-position: center center;
+	// }
+
+	&__zoom {
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-17px, -18px);
+		background-image: url(../imgs/zoom-icon.png);
+		background-repeat: no-repeat;
+		background-position: center center;
+		width: 35px;
+		height: 36px;
+		opacity: 0;
+	
+	}	
+
+	&:hover img{
+		opacity: .5;
+		transition-duration: 0.3s;
+		transition-property: opacity;
+	}
+
+	&:hover &__zoom{
+		opacity: 1;
+		transition-duration: 0.3s;
+		transition-property: opacity;
+	}
+
+}
+
+
+
+.fade-bottom {
+	display: inline-block;
+	position: relative;
+	overflow: hidden;
+	line-height: 0;
+
+	&__flow {
+		position: absolute;
+		height: 70px;
+		bottom: -70px;
+		left: 0;
+		right: 0;
+		opacity: 0;
+		background-color: rgba(0, 0, 0, 0.5);
+		padding: 17px 20px 0;
+		color: #fff;
+		font-size: 14px;
+		line-height: 20px;
+		box-sizing: border-box;
+	}
+
+	&:hover &__flow {
+		opacity: 1;
+		transform: translateY(-70px);
+		transition-duration: 0.4s;
+		transition-property: opacity, transform;
+	}
+	
+}
+
+
+
+.flip {
+	display: block;
+	position: relative;
+	width: 258px;
+	height: 258px;
+	z-index: 1;
+	perspective: 1000;
+	
+	&__card {
+		width: 100%;
+  		height: 100%;
+  		transform-style: preserve-3d;
+  		transition: all .5s;
+	}
+
+	&:hover &__card {
+		transform: rotateY(180deg);
+	}
+
+	&__face {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		backface-visibility: hidden;
+	}
+
+	&__face--back {
+		display: block;
+		transform: rotateY(180deg);
+		box-sizing: border-box;
+		padding: 35% 10px 0;
+		color: #000;
+		text-align: center;
+		background-color: #fff;
+		border: 1px solid #cacaca;
+		border-radius: 5px;
+	}
+
+
+}
+

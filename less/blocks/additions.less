@@ -1,0 +1,102 @@
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+
+body {
+	background-color: #f0f2f5;
+}
+
+.white { background-color: #fff;}
+
+.example__blue-grid { 
+	background-color: #b3d4f9;
+	min-height: 34px;
+}
+
+.example__link {
+	margin: 20px 0;
+
+	&--hover {
+		margin-left: 20px;
+		border-bottom: 1px transparent;
+	}
+}
+
+.example__h1 {
+	font-size: 32px;
+	display: block;
+	font-family: "MyriadProRegular", sans-serif;
+	font-weight: normal;
+	display: block;
+	margin: 20px 0 26px;
+	padding-bottom: 20px;
+	border-bottom: 1px solid rgba(121, 121, 121, 0.2);
+}
+
+
+.example__btn {
+
+	&-green--hover {
+	background-color: @green--h;
+	box-shadow: 0 3px 0 @green--shad-h;
+	}
+
+	&-green--active {
+		background-color: @green;
+		transform: translateY(3px);
+		box-shadow: none;
+	}
+
+
+	&-red--hover {
+	background-color: @red--h;
+	box-shadow: 0 3px 0 @red--shad-h;
+	}
+
+	&-red--active {
+		background-color: @red;
+		transform: translateY(3px);
+		box-shadow: none;
+	}
+
+
+	&-gray--hover {
+	background-color: @gray--h;
+	box-shadow: 0 3px 0 @gray--shad-h;
+	}
+
+	&-gray--active {
+		background-color: @gray;
+		transform: translateY(3px);
+		box-shadow: none;
+	}
+	
+}
+
+
+.example__tooltip {
+	width: 258px;
+	min-height: 120px;
+
+	& p {
+		margin: 30px 0;
+		color: @red;
+		font-style: italic;
+	}
+}
+
+
+.example__tabs {
+	margin-top: 30px;
+
+	&-inner {
+		padding: 15px 15px 30px;
+		width: 440px;
+	}
+}
